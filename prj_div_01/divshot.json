@@ -1,0 +1,6 @@
+{
+  "name": "prj-div-02",
+  "root": "./",
+  "clean_urls": true,
+  "error_page": "pages/error.html"
+}
