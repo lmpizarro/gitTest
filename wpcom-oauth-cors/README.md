@@ -3,6 +3,11 @@ wpcom-oauth-cors
 
 [WordPress.com](http://wordpress.com)
 [implicit OAuth2](http://tutorials.jenkov.com/oauth2/authorization.html#implicit)
+[OAuth2 Authentication](https://developer.wordpress.com/docs/oauth2/)
+[Using the REST API from JavaScript & the Browser (CORS)](https://developer.wordpress.com/docs/rest-api-javascript/)
+[HTTP access control (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+[browserify](http://browserify.org/)
+
 **client-side** authorization module.
 
 The **server-side** (Node.js) counterpart to this module is
