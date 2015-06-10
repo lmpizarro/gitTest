@@ -1,2 +1,4 @@
-./wpcom-oauth-cors/node_modules/*
-./node_modules
+wpcom-oauth-cors/node_modules/*
+node_modules
+browserify/node_modules
+browserify/bundle.js
