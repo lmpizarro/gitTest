@@ -9,6 +9,7 @@
 
   <!-- SPELLS -->
   <!-- load angular and angular route via CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
   <script src="script.js"></script>
@@ -45,5 +46,62 @@
     <p>Ver el tutorial en </p>
     </footer>
 
+<script type="text/javascript">
+
+    // A $( document ).ready() block.
+    $( document ).ready(function() {
+
+    jQuery.ajax( {
+        url: 'https://public-api.wordpress.com/rest/v1.1/sites/' + 93413589 + '/posts',
+        type: 'GET',
+        success: function( response ) {
+	// response
+                console.log(response);
+		console.log(response.posts[0]);
+		console.log(response.posts[0].content);
+		console.log(response.posts[0].featured_image);
+		console.log(response.posts[2]);
+	    }
+	    });
+
+    jQuery.ajax( {
+        url: 'https://public-api.wordpress.com/rest/v1.1/sites/' + 93413589 + '/media',
+	type: 'GET',
+	error:  function( response ) {
+	// response
+                console.log(response.responseText);
+	    },
+
+        success: function( response ) {
+	// response
+                console.log(response);
+	    }
+    });
+
+
+    jQuery.ajax( {
+        url: 'https://public-api.wordpress.com/oauth2/authorize?client_id=' + 41152 + '&redirect_uri=' + 'http://www.blogger.com/' + '&response_type=token&blog=1234',
+	type: 'GET',
+	error:  function( response ) {
+	// response
+	        console.log("error Oauth");
+                console.log(response);
+	    },
+
+        success: function( response ) {
+	// response
+	        console.log("success Oauth");
+                console.log(response);
+	    }
+	});
+
+
+ 
+    });
+
+
+
+
+</script>
 </body>
 </html>
