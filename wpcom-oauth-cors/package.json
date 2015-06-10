@@ -1,0 +1,20 @@
+{
+  "name": "wpcom-oauth-cors",
+  "version": "1.0.0",
+  "description": "WordPress.com implicit OAuth2 client-side authorization module",
+  "dependencies": {
+    "debug": "2.1.0",
+    "jquery": "^2.1.4"
+  },
+  "author": "Automattic, Inc.",
+  "contributors": [
+    "Damian Suarez <rdsuarez@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Automattic/wpcom-oauth-cors.git"
+  },
+  "devDependencies": {
+    "browserify": "5.10.1"
+  }
+}
