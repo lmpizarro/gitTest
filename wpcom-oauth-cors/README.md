@@ -1,6 +1,9 @@
 wpcom-oauth-cors
 ================
 
+
+## References
+
 [WordPress.com](http://wordpress.com)
 
 [implicit OAuth2](http://tutorials.jenkov.com/oauth2/authorization.html#implicit)
